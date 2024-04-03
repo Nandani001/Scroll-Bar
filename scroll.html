@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AICT</title>
+    <style>
+
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            background-color: black;
+        }
+
+        p::selection,
+        h1::selection {
+            background-color: rgb(255, 0, 0);
+        }
+
+        section {
+            width: 80%;
+            margin: auto;
+        }
+
+        .heading {
+            background-color: rgb(234, 255, 0);
+            padding: 10px;
+            margin-top: 10px;
+        }
+
+        section p {
+            font-size: 1.3rem;
+            color: rgb(255, 255, 255);
+            margin: 20px 0;
+        }
+
+        ::-webkit-scrollbar {
+            width: 0;
+        }
+
+        .scroll {
+            position: fixed;
+            top: 0;
+            right: 0;
+            width: 10px;
+            background-image: linear-gradient(rgb(183, 255, 0), rgb(255, 94, 0), rgb(255, 255, 0));
+        }
+        
+    </style>
+</head>
+
+<body>
+    <div class="scroll"></div>
+    <section>
+        <h1 class="heading">ADITYA INSTITUTE OF COMPUTER TECNOLOGIES</h1>
+        <p class="para">ADITYA INSTITUTE OF COMPUTER TECHNOLOGIES stands as a beacon of educational excellence,
+            dedicated to equipping students with cutting-edge computer skills. At AICT, our mission is clear: to nurture
+            and transform aspiring individuals into adept professionals, primed for success in the dynamic world of
+            technology.
+            <br><br>
+            Embarking on a journey of higher learning, AICT offers a comprehensive array of undergraduate and
+            postgraduate programs in computer science and technology. Renowned for its commitment to excellence, our
+            institution proudly holds a position of prominence in the realm of computer education and research.
+            <br><br>
+
+            Fostering a culture of innovation and practical learning, our institute boasts invaluable industry
+            partnerships and coveted internships. Through these collaborations, students gain invaluable real-world
+            experience and forge connections with seasoned professionals, setting the stage for a prosperous career
+            trajectory.
+        </p>
+
+        <h1 class="heading">WHY CHOOSE US?</h1>
+        <p class="para">Welcome to Aditya Institute of Computer Technologies – Your Pathway to Excellence!
+            <br><br>
+
+            1. Commitment to Excellence: At AICT, excellence is not just a goal; it's our guiding principle. We are
+            dedicated to providing top-tier education that equips our students with the skills and knowledge needed to
+            excel in today's competitive world.
+            <br><br>
+
+            2. Affordable Education: We believe that quality education should be accessible to all. That's why we offer
+            purposeful education at an affordable cost, ensuring that financial constraints never hinder your pursuit of
+            knowledge.
+            <br><br>
+
+            3. High-Quality Education Pool: Our institution prides itself on cultivating a pool of high-quality
+            education. With experienced faculty, industry partnerships, and cutting-edge curriculum, we provide an
+            unparalleled learning experience.
+            <br><br>
+
+            4. Professional Development: We are committed to not just imparting knowledge but also nurturing success.
+            Through specific computer education and training opportunities, we ensure continuous professional
+            development and skill up-gradation for our students.
+            <br><br>
+
+            5. Industry-Relevant Courses: Our courses are designed to meet the demands of the ever-evolving industry.
+            Whether it's web development, digital marketing, or video editing, we offer a variety of courses that
+            prepare you to thrive in the booming tech sector.
+            <br><br>
+
+            6. Recognition and Prestige: AICT is recognized as a premier institution for education. By choosing us, you
+            join a community of learners and professionals who are making a lasting impact in the field of computer
+            science and technology.
+            <br><br>
+
+            Join us at AICT and embark on a journey towards a brighter and more successful future!
+        </p>
+        <h1 class="heading">OUR MISSION</h1>
+        <p class="para">Our program's core objective revolves around instilling a profound and comprehensive
+            understanding of computers within our students. Through meticulously curated courses and study materials, we
+            ensure quality education tailored to both the knowledge level of our students and the latest industry
+            developments. All this, provided at an accessible fee, underscores our commitment to offering purposeful
+            education without financial barriers.
+            <br><br>
+
+            Our aim is clear: to cultivate a reservoir of top-tier education, empowering individuals with the skills and
+            knowledge to thrive in today's competitive landscape. By delivering the finest professional education, we
+            pave the path for our students to transcend into the realm of success.
+            <br><br>
+
+            Furthermore, we recognize the importance of continuous learning and skill enhancement in the ever-evolving
+            field of technology. Hence, we provide specialized computer education and training opportunities to
+            facilitate ongoing professional development.
+            <br><br>
+
+            At our institute, we prepare you to seize the opportunities abound in the burgeoning industry. With an array
+            of top-notch computer courses spanning various domains such as Web Development, Digital Marketing, and Video
+            Editing, we equip you to make your mark in the dynamic landscape of the Indian tech industry.
+        </p>
+
+        <h1 class="heading">OUR VISION</h1>
+        <p class="para">Our vision transcends mere aspiration; it embodies a commitment to excellence that beckons the
+            most brilliant minds from far and wide. We aspire to be more than just an educational institution; we strive
+            to be revered as a beacon of academic distinction. Through unwavering dedication to excellence, we aim to
+            etch a lasting legacy in our field.
+            <br><br>
+
+            At the heart of our mission lies the belief in providing purposeful education without financial constraints.
+            We envision a future where quality education is accessible to all, regardless of socioeconomic status. Our
+            goal is to cultivate a reservoir of high-quality education, nurturing individuals who are primed for success
+            in their chosen endeavors.
+            <br><br>
+
+            Central to our ethos is the unwavering commitment to providing unparalleled professional education. We are
+            dedicated to empowering our students with the knowledge and skills necessary to navigate the complexities of
+            the modern world with confidence and competence.
+            <br><br>
+
+            Moreover, we recognize the imperative of continuous learning and skill enhancement in today's rapidly
+            evolving landscape. Thus, we are steadfast in our resolve to offer specific computer education and training
+            opportunities, facilitating ongoing professional development and skill up-gradation for our students.
+        </p>
+
+    </section>
+
+
+    <script>
+        let progress = document.querySelector('.scroll');
+        let totalHeight = document.body.scrollHeight - window.innerHeight;
+        window.onscroll = function () {
+            let progressHeight = (window.pageYOffset / totalHeight) * 100;
+            progress.style.height = progressHeight + "%";
+        }
+    </script>
+
+</body>
+
+</html>
